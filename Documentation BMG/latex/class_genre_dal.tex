@@ -1,0 +1,138 @@
+\hypertarget{class_genre_dal}{}\section{Genre\+Dal Class Reference}
+\label{class_genre_dal}\index{Genre\+Dal@{Genre\+Dal}}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{class_genre_dal_a2f593b6941ef3a8e74cbade10d97935b}{load\+Genres} (\$style)
+\item 
+static \hyperlink{class_genre_dal_accf9d9f0e125c11bf0f771c169a0b582}{load\+Genre\+By\+ID} (\$id)
+\item 
+static \hyperlink{class_genre_dal_ae23e2a655a7711445afd4c3fa6849d3e}{add\+Genre} ( \$code, \$libelle)
+\item 
+static \hyperlink{class_genre_dal_a144dfb663ffd0988d949eef2eb2c97e8}{set\+Genre} ( \$code, \$libelle)
+\item 
+static \hyperlink{class_genre_dal_aa980c22187323f1df68f295d6d018aaf}{del\+Genre} (\$code)
+\item 
+static \hyperlink{class_genre_dal_aa1c5c4d06963df032b7cf34d9b56c02e}{count\+Ouvrages\+Genre} (\$code)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 19 of file Genre\+Dal.\+class.\+php.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_genre_dal_ae23e2a655a7711445afd4c3fa6849d3e}\label{class_genre_dal_ae23e2a655a7711445afd4c3fa6849d3e}} 
+\index{Genre\+Dal@{Genre\+Dal}!add\+Genre@{add\+Genre}}
+\index{add\+Genre@{add\+Genre}!Genre\+Dal@{Genre\+Dal}}
+\subsubsection{\texorpdfstring{add\+Genre()}{addGenre()}}
+{\footnotesize\ttfamily static add\+Genre (\begin{DoxyParamCaption}\item[{}]{\$code,  }\item[{}]{\$libelle }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+ajoute un genre 
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$code} & \+: le code du genre à ajouter \\
+\hline
+string & {\em \$libelle} & \+: le libellé du genre à ajouter \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+object un objet de la classe \hyperlink{class_genre}{Genre} 
+\end{DoxyReturn}
+
+
+Definition at line 56 of file Genre\+Dal.\+class.\+php.
+
+\mbox{\Hypertarget{class_genre_dal_aa1c5c4d06963df032b7cf34d9b56c02e}\label{class_genre_dal_aa1c5c4d06963df032b7cf34d9b56c02e}} 
+\index{Genre\+Dal@{Genre\+Dal}!count\+Ouvrages\+Genre@{count\+Ouvrages\+Genre}}
+\index{count\+Ouvrages\+Genre@{count\+Ouvrages\+Genre}!Genre\+Dal@{Genre\+Dal}}
+\subsubsection{\texorpdfstring{count\+Ouvrages\+Genre()}{countOuvragesGenre()}}
+{\footnotesize\ttfamily static count\+Ouvrages\+Genre (\begin{DoxyParamCaption}\item[{}]{\$code }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+calcule le nombre d\textquotesingle{}ouvrages pour un genre 
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$code} & \+: le code du genre \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 113 of file Genre\+Dal.\+class.\+php.
+
+\mbox{\Hypertarget{class_genre_dal_aa980c22187323f1df68f295d6d018aaf}\label{class_genre_dal_aa980c22187323f1df68f295d6d018aaf}} 
+\index{Genre\+Dal@{Genre\+Dal}!del\+Genre@{del\+Genre}}
+\index{del\+Genre@{del\+Genre}!Genre\+Dal@{Genre\+Dal}}
+\subsubsection{\texorpdfstring{del\+Genre()}{delGenre()}}
+{\footnotesize\ttfamily static del\+Genre (\begin{DoxyParamCaption}\item[{}]{\$code }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+supprime un genre 
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$code} & \+: le code du genre à supprimer \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 99 of file Genre\+Dal.\+class.\+php.
+
+\mbox{\Hypertarget{class_genre_dal_accf9d9f0e125c11bf0f771c169a0b582}\label{class_genre_dal_accf9d9f0e125c11bf0f771c169a0b582}} 
+\index{Genre\+Dal@{Genre\+Dal}!load\+Genre\+By\+ID@{load\+Genre\+By\+ID}}
+\index{load\+Genre\+By\+ID@{load\+Genre\+By\+ID}!Genre\+Dal@{Genre\+Dal}}
+\subsubsection{\texorpdfstring{load\+Genre\+By\+I\+D()}{loadGenreByID()}}
+{\footnotesize\ttfamily static load\+Genre\+By\+ID (\begin{DoxyParamCaption}\item[{}]{\$id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+charge un objet de la classe \hyperlink{class_genre}{Genre} à partir de son code 
+\begin{DoxyParams}{Parameters}
+{\em \$id} & \+: le code du genre \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+un objet de la classe \hyperlink{class_genre}{Genre} 
+\end{DoxyReturn}
+
+
+Definition at line 40 of file Genre\+Dal.\+class.\+php.
+
+\mbox{\Hypertarget{class_genre_dal_a2f593b6941ef3a8e74cbade10d97935b}\label{class_genre_dal_a2f593b6941ef3a8e74cbade10d97935b}} 
+\index{Genre\+Dal@{Genre\+Dal}!load\+Genres@{load\+Genres}}
+\index{load\+Genres@{load\+Genres}!Genre\+Dal@{Genre\+Dal}}
+\subsubsection{\texorpdfstring{load\+Genres()}{loadGenres()}}
+{\footnotesize\ttfamily static load\+Genres (\begin{DoxyParamCaption}\item[{}]{\$style }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em \$style} & \+: 0 == tableau assoc, 1 == objet \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+un objet de la classe P\+D\+O\+Statement 
+\end{DoxyReturn}
+
+
+Definition at line 25 of file Genre\+Dal.\+class.\+php.
+
+\mbox{\Hypertarget{class_genre_dal_a144dfb663ffd0988d949eef2eb2c97e8}\label{class_genre_dal_a144dfb663ffd0988d949eef2eb2c97e8}} 
+\index{Genre\+Dal@{Genre\+Dal}!set\+Genre@{set\+Genre}}
+\index{set\+Genre@{set\+Genre}!Genre\+Dal@{Genre\+Dal}}
+\subsubsection{\texorpdfstring{set\+Genre()}{setGenre()}}
+{\footnotesize\ttfamily static set\+Genre (\begin{DoxyParamCaption}\item[{}]{\$code,  }\item[{}]{\$libelle }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+modifie un genre 
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$code} & \\
+\hline
+string & {\em \$libelle} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+un code erreur 
+\end{DoxyReturn}
+
+
+Definition at line 79 of file Genre\+Dal.\+class.\+php.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+modele/\+Dal/\hyperlink{_genre_dal_8class_8php}{Genre\+Dal.\+class.\+php}\end{DoxyCompactItemize}

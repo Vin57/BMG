@@ -1,0 +1,109 @@
+\hypertarget{class_pdo_dao}{}\section{Pdo\+Dao Class Reference}
+\label{class_pdo_dao}\index{Pdo\+Dao@{Pdo\+Dao}}
+Inheritance diagram for Pdo\+Dao\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_pdo_dao}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_pdo_dao_a095c5d389db211932136b53f25f39685}{\+\_\+\+\_\+construct} ()
+\item 
+\hyperlink{class_pdo_dao_a12c1ef0decfa06f2f07cb681f3be8c50}{get\+Rows} (\$sql, \$params, \$style)
+\item 
+\hyperlink{class_pdo_dao_a5ba34a0a513050a7983c8c9f03a30732}{exec\+S\+QL} (\$sql, \$params)
+\item 
+\hyperlink{class_pdo_dao_a25d71275d800f84b28ec8bd6e055a675}{get\+Value} (\$sql, \$params)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 8 of file Pdo\+Dao.\+class.\+php.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_pdo_dao_a095c5d389db211932136b53f25f39685}\label{class_pdo_dao_a095c5d389db211932136b53f25f39685}} 
+\index{Pdo\+Dao@{Pdo\+Dao}!\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}}
+\index{\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}!Pdo\+Dao@{Pdo\+Dao}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \+\_\+\+\_\+construct (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Constructeur hérité de P\+DO 
+
+Definition at line 13 of file Pdo\+Dao.\+class.\+php.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_pdo_dao_a5ba34a0a513050a7983c8c9f03a30732}\label{class_pdo_dao_a5ba34a0a513050a7983c8c9f03a30732}} 
+\index{Pdo\+Dao@{Pdo\+Dao}!exec\+S\+QL@{exec\+S\+QL}}
+\index{exec\+S\+QL@{exec\+S\+QL}!Pdo\+Dao@{Pdo\+Dao}}
+\subsubsection{\texorpdfstring{exec\+S\+Q\+L()}{execSQL()}}
+{\footnotesize\ttfamily exec\+S\+QL (\begin{DoxyParamCaption}\item[{}]{\$sql,  }\item[{}]{\$params }\end{DoxyParamCaption})}
+
+Fonction qui exécute une requête action préparée avec des paramètres anonymes 
+\begin{DoxyParams}{Parameters}
+{\em \$sql} & \+: la requête S\+QL à exécuter \\
+\hline
+{\em \$params} & \+: un tableau de paramètres contenant les valeurs à substituer dans la requête \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+un entier désignant le nombre de lignes affectées par l\textquotesingle{}exécution de la requête 
+\end{DoxyReturn}
+
+
+Definition at line 66 of file Pdo\+Dao.\+class.\+php.
+
+\mbox{\Hypertarget{class_pdo_dao_a12c1ef0decfa06f2f07cb681f3be8c50}\label{class_pdo_dao_a12c1ef0decfa06f2f07cb681f3be8c50}} 
+\index{Pdo\+Dao@{Pdo\+Dao}!get\+Rows@{get\+Rows}}
+\index{get\+Rows@{get\+Rows}!Pdo\+Dao@{Pdo\+Dao}}
+\subsubsection{\texorpdfstring{get\+Rows()}{getRows()}}
+{\footnotesize\ttfamily get\+Rows (\begin{DoxyParamCaption}\item[{}]{\$sql,  }\item[{}]{\$params,  }\item[{}]{\$style }\end{DoxyParamCaption})}
+
+Fonction qui renvoie un tableau de valeurs correspondant au résultat de l\textquotesingle{}exécution d\textquotesingle{}une requête préparée S\+QL avec des paramètres anonymes 
+\begin{DoxyParams}{Parameters}
+{\em \$sql} & (la requête S\+QL à exécuter) \\
+\hline
+{\em \$params} & \+: un tableau de paramètres contenant les valeurs \\
+\hline
+{\em \$style} & \+: 0 == both, 1 == objet \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+un tableau associatif ou \char`\"{}objet\char`\"{} suivant le paramètre style 
+\end{DoxyReturn}
+
+
+Definition at line 39 of file Pdo\+Dao.\+class.\+php.
+
+\mbox{\Hypertarget{class_pdo_dao_a25d71275d800f84b28ec8bd6e055a675}\label{class_pdo_dao_a25d71275d800f84b28ec8bd6e055a675}} 
+\index{Pdo\+Dao@{Pdo\+Dao}!get\+Value@{get\+Value}}
+\index{get\+Value@{get\+Value}!Pdo\+Dao@{Pdo\+Dao}}
+\subsubsection{\texorpdfstring{get\+Value()}{getValue()}}
+{\footnotesize\ttfamily get\+Value (\begin{DoxyParamCaption}\item[{}]{\$sql,  }\item[{}]{\$params }\end{DoxyParamCaption})}
+
+Fonction qui exécute une requête préparée avec des paramètres anonymes et qui récupère une seule valeur 
+\begin{DoxyParams}{Parameters}
+{\em \$sql} & \+: la requête S\+QL à exécuter La requête ne doit renvoyer qu\textquotesingle{}une colonne et une ligne \\
+\hline
+{\em \$params} & \+: un tableau de paramètres contenant les valeurs à substituer dans la requête \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+la valeur récupérée par l\textquotesingle{}exécution de la requête 
+\end{DoxyReturn}
+
+
+Definition at line 86 of file Pdo\+Dao.\+class.\+php.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+modele/\+Dal/\hyperlink{_pdo_dao_8class_8php}{Pdo\+Dao.\+class.\+php}\end{DoxyCompactItemize}

@@ -1,0 +1,140 @@
+\hypertarget{class_prets}{}\section{Prets Class Reference}
+\label{class_prets}\index{Prets@{Prets}}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{class_prets_a8a173fad71ea1b75ea7fb092732bd7fb}{charger\+Les\+Prets} (\$mode, \$etat\+\_\+pret)
+\item 
+static \hyperlink{class_prets_ae2e15f8376a62a7e410b70431a365e4f}{pret\+Existe} (\$id)
+\item 
+static \hyperlink{class_prets_af21bb9078a59c621c5539fd14716e689}{ajouter\+Pret} (\$no\+\_\+client, \$no\+\_\+ouvrage, \$date\+\_\+emp)
+\item 
+static \hyperlink{class_prets_a71f7b77d9ff38020ab022389dda0e226}{modifier\+Pret} (\$pret)
+\item 
+static \hyperlink{class_prets_a319222a4f2442b93068fadd2a5bb7d2d}{supprimer\+Pret} (\$id)
+\item 
+static \hyperlink{class_prets_a7ea0e0fc80de1d6df26d9a8e0017ff92}{charger\+Pret\+Par\+Id} (\$id)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 35 of file Prets.\+class.\+php.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_prets_af21bb9078a59c621c5539fd14716e689}\label{class_prets_af21bb9078a59c621c5539fd14716e689}} 
+\index{Prets@{Prets}!ajouter\+Pret@{ajouter\+Pret}}
+\index{ajouter\+Pret@{ajouter\+Pret}!Prets@{Prets}}
+\subsubsection{\texorpdfstring{ajouter\+Pret()}{ajouterPret()}}
+{\footnotesize\ttfamily static ajouter\+Pret (\begin{DoxyParamCaption}\item[{}]{\$no\+\_\+client,  }\item[{}]{\$no\+\_\+ouvrage,  }\item[{}]{\$date\+\_\+emp }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\begin{DoxyAuthor}{Author}
+PV 18/11/2016 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$no\+\_\+client} & le numéro du cient emprunteur \\
+\hline
+int & {\em \$no\+\_\+ouvrage} & le numéro de l\textquotesingle{}ouvrage emprunté \\
+\hline
+date & {\em \$date\+\_\+emp} & la date d\textquotesingle{}emprunt de l\textquotesingle{}ouvrage \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int \$result 0 =$>$ l\textquotesingle{}ajout à été normalement effectué -\/1 =$>$ aucun numéro de client n\textquotesingle{}à été transmis à la procédure -\/2 =$>$ le client n\textquotesingle{}existe pas -\/4 =$>$ aucun numéro d\textquotesingle{}ouvrage n\textquotesingle{}à été transmis à la procédure -\/6 =$>$ l\textquotesingle{}ouvrage n\textquotesingle{}existe pas -\/8 =$>$ aucune date d\textquotesingle{}emprunt transmise à la procédure -\/10 =$>$ l\textquotesingle{}ouvrage que l\textquotesingle{}on souhaite emprunté est déjà prêté -\/99 =$>$ La requête à échoué 
+\end{DoxyReturn}
+
+
+Definition at line 94 of file Prets.\+class.\+php.
+
+\mbox{\Hypertarget{class_prets_a8a173fad71ea1b75ea7fb092732bd7fb}\label{class_prets_a8a173fad71ea1b75ea7fb092732bd7fb}} 
+\index{Prets@{Prets}!charger\+Les\+Prets@{charger\+Les\+Prets}}
+\index{charger\+Les\+Prets@{charger\+Les\+Prets}!Prets@{Prets}}
+\subsubsection{\texorpdfstring{charger\+Les\+Prets()}{chargerLesPrets()}}
+{\footnotesize\ttfamily static charger\+Les\+Prets (\begin{DoxyParamCaption}\item[{}]{\$mode,  }\item[{}]{\$etat\+\_\+pret }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Méthodes publiques \begin{DoxyAuthor}{Author}
+PV G2 10/11/2016 récupére les prets 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em \$mode} & \+: 0 == tableau assoc, 1 == tableau d\textquotesingle{}objets \$etat\+\_\+pret \+: voir config.\+inc.\+php rubrique \char`\"{}constantes pour la fonction load\+Generic\+Pret\char`\"{} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+un tableau de type \$mode 
+\end{DoxyReturn}
+
+
+Definition at line 47 of file Prets.\+class.\+php.
+
+\mbox{\Hypertarget{class_prets_a7ea0e0fc80de1d6df26d9a8e0017ff92}\label{class_prets_a7ea0e0fc80de1d6df26d9a8e0017ff92}} 
+\index{Prets@{Prets}!charger\+Pret\+Par\+Id@{charger\+Pret\+Par\+Id}}
+\index{charger\+Pret\+Par\+Id@{charger\+Pret\+Par\+Id}!Prets@{Prets}}
+\subsubsection{\texorpdfstring{charger\+Pret\+Par\+Id()}{chargerPretParId()}}
+{\footnotesize\ttfamily static charger\+Pret\+Par\+Id (\begin{DoxyParamCaption}\item[{}]{\$id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\begin{DoxyAuthor}{Author}
+G2 17/11/2016 récupére les caractéristiques d\textquotesingle{}un pret 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em \$id} & \+: le code du pret \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+un objet de la classe pret 
+\end{DoxyReturn}
+
+
+Definition at line 120 of file Prets.\+class.\+php.
+
+\mbox{\Hypertarget{class_prets_a71f7b77d9ff38020ab022389dda0e226}\label{class_prets_a71f7b77d9ff38020ab022389dda0e226}} 
+\index{Prets@{Prets}!modifier\+Pret@{modifier\+Pret}}
+\index{modifier\+Pret@{modifier\+Pret}!Prets@{Prets}}
+\subsubsection{\texorpdfstring{modifier\+Pret()}{modifierPret()}}
+{\footnotesize\ttfamily static modifier\+Pret (\begin{DoxyParamCaption}\item[{}]{\$pret }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line 104 of file Prets.\+class.\+php.
+
+\mbox{\Hypertarget{class_prets_ae2e15f8376a62a7e410b70431a365e4f}\label{class_prets_ae2e15f8376a62a7e410b70431a365e4f}} 
+\index{Prets@{Prets}!pret\+Existe@{pret\+Existe}}
+\index{pret\+Existe@{pret\+Existe}!Prets@{Prets}}
+\subsubsection{\texorpdfstring{pret\+Existe()}{pretExiste()}}
+{\footnotesize\ttfamily static pret\+Existe (\begin{DoxyParamCaption}\item[{}]{\$id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\begin{DoxyAuthor}{Author}
+dk vérifie si un pret existe 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em \$id} & \+: le code du pret é contréler \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+un booléen 
+\end{DoxyReturn}
+
+
+Definition at line 72 of file Prets.\+class.\+php.
+
+\mbox{\Hypertarget{class_prets_a319222a4f2442b93068fadd2a5bb7d2d}\label{class_prets_a319222a4f2442b93068fadd2a5bb7d2d}} 
+\index{Prets@{Prets}!supprimer\+Pret@{supprimer\+Pret}}
+\index{supprimer\+Pret@{supprimer\+Pret}!Prets@{Prets}}
+\subsubsection{\texorpdfstring{supprimer\+Pret()}{supprimerPret()}}
+{\footnotesize\ttfamily static supprimer\+Pret (\begin{DoxyParamCaption}\item[{}]{\$id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line 110 of file Prets.\+class.\+php.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+modele/\+Bll/\hyperlink{_prets_8class_8php}{Prets.\+class.\+php}\end{DoxyCompactItemize}

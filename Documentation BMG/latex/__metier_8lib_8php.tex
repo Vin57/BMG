@@ -1,0 +1,99 @@
+\hypertarget{__metier_8lib_8php}{}\section{include/\+\_\+metier.lib.\+php File Reference}
+\label{__metier_8lib_8php}\index{include/\+\_\+metier.\+lib.\+php@{include/\+\_\+metier.\+lib.\+php}}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{__metier_8lib_8php_aec3ab89774c50691124093085120313c}{rayon\+Valide} (\$valeur)
+\item 
+\hyperlink{__metier_8lib_8php_a1ae47f5153d633ef97c13d9bcd3c7687}{couverture\+Existe} (\$id)
+\item 
+\hyperlink{__metier_8lib_8php_a3aa5a8c105a4074b3fd6fc6847665432}{couverture\+Ouvrage} (\$id, \$alt)
+\item 
+\hyperlink{__metier_8lib_8php_aa0f4744afaa5d636208a356e5ac84fec}{afficher\+Liste} (\$tab, \$name, \$select, \$class)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{__metier_8lib_8php_aa0f4744afaa5d636208a356e5ac84fec}\label{__metier_8lib_8php_aa0f4744afaa5d636208a356e5ac84fec}} 
+\index{\+\_\+metier.\+lib.\+php@{\+\_\+metier.\+lib.\+php}!afficher\+Liste@{afficher\+Liste}}
+\index{afficher\+Liste@{afficher\+Liste}!\+\_\+metier.\+lib.\+php@{\+\_\+metier.\+lib.\+php}}
+\subsubsection{\texorpdfstring{afficher\+Liste()}{afficherListe()}}
+{\footnotesize\ttfamily afficher\+Liste (\begin{DoxyParamCaption}\item[{}]{\$tab,  }\item[{}]{\$name,  }\item[{}]{\$select,  }\item[{}]{\$class }\end{DoxyParamCaption})}
+
+Affiche une liste à partir d\textquotesingle{}un tableau unidimensionel 
+\begin{DoxyParams}[1]{Parameters}
+type & {\em \$tab} & \\
+\hline
+type & {\em \$name} & \\
+\hline
+type & {\em \$select} & \\
+\hline
+type & {\em \$class} & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 55 of file \+\_\+metier.\+lib.\+php.
+
+\mbox{\Hypertarget{__metier_8lib_8php_a1ae47f5153d633ef97c13d9bcd3c7687}\label{__metier_8lib_8php_a1ae47f5153d633ef97c13d9bcd3c7687}} 
+\index{\+\_\+metier.\+lib.\+php@{\+\_\+metier.\+lib.\+php}!couverture\+Existe@{couverture\+Existe}}
+\index{couverture\+Existe@{couverture\+Existe}!\+\_\+metier.\+lib.\+php@{\+\_\+metier.\+lib.\+php}}
+\subsubsection{\texorpdfstring{couverture\+Existe()}{couvertureExiste()}}
+{\footnotesize\ttfamily couverture\+Existe (\begin{DoxyParamCaption}\item[{}]{\$id }\end{DoxyParamCaption})}
+
+vérifie si la couverture d\textquotesingle{}un ouvrage existe dans le dossier
+
+
+\begin{DoxyParams}{Parameters}
+{\em \$id} & \+: l\textquotesingle{}id de l\textquotesingle{}ouvrage dont on recherche la couverture \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+un booléen qui indique si le fichier existe 
+\end{DoxyReturn}
+
+
+Definition at line 25 of file \+\_\+metier.\+lib.\+php.
+
+\mbox{\Hypertarget{__metier_8lib_8php_a3aa5a8c105a4074b3fd6fc6847665432}\label{__metier_8lib_8php_a3aa5a8c105a4074b3fd6fc6847665432}} 
+\index{\+\_\+metier.\+lib.\+php@{\+\_\+metier.\+lib.\+php}!couverture\+Ouvrage@{couverture\+Ouvrage}}
+\index{couverture\+Ouvrage@{couverture\+Ouvrage}!\+\_\+metier.\+lib.\+php@{\+\_\+metier.\+lib.\+php}}
+\subsubsection{\texorpdfstring{couverture\+Ouvrage()}{couvertureOuvrage()}}
+{\footnotesize\ttfamily couverture\+Ouvrage (\begin{DoxyParamCaption}\item[{}]{\$id,  }\item[{}]{\$alt }\end{DoxyParamCaption})}
+
+retourne le chemin d\textquotesingle{}accès vers l\textquotesingle{}image de la couverture d\textquotesingle{}un ouvrage
+
+
+\begin{DoxyParams}{Parameters}
+{\em \$id} & \+: l\textquotesingle{}id de l\textquotesingle{}ouvrage dont on recherche la couverture \\
+\hline
+{\em \$alt} & \+: l\textquotesingle{}attribut alt à indiquer sur l\textquotesingle{}image \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+une chaîne de caractères contenant une balise  
+\end{DoxyReturn}
+
+
+Definition at line 36 of file \+\_\+metier.\+lib.\+php.
+
+\mbox{\Hypertarget{__metier_8lib_8php_aec3ab89774c50691124093085120313c}\label{__metier_8lib_8php_aec3ab89774c50691124093085120313c}} 
+\index{\+\_\+metier.\+lib.\+php@{\+\_\+metier.\+lib.\+php}!rayon\+Valide@{rayon\+Valide}}
+\index{rayon\+Valide@{rayon\+Valide}!\+\_\+metier.\+lib.\+php@{\+\_\+metier.\+lib.\+php}}
+\subsubsection{\texorpdfstring{rayon\+Valide()}{rayonValide()}}
+{\footnotesize\ttfamily rayon\+Valide (\begin{DoxyParamCaption}\item[{}]{\$valeur }\end{DoxyParamCaption})}
+
+vérifie la validité du code d\textquotesingle{}un rayon (1 lettre en majuscules et un chiffre)
+
+
+\begin{DoxyParams}{Parameters}
+{\em \$valeur} & \+: une chaîne de caractère contenant le code du rayon \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+un booléen qui indique si le rayon est valide 
+\end{DoxyReturn}
+
+
+Definition at line 15 of file \+\_\+metier.\+lib.\+php.
+

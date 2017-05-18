@@ -1,0 +1,148 @@
+\hypertarget{class_auteurs}{}\section{Auteurs Class Reference}
+\label{class_auteurs}\index{Auteurs@{Auteurs}}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{class_auteurs_ab4cdf0e170009a70a0b8c17b03a76ee9}{charger\+Les\+Auteurs} (\$mode)
+\item 
+static \hyperlink{class_auteurs_ab06d5f0fe343a9d54632aab5086bc67d}{Auteur\+Existe} (\$id)
+\item 
+static \hyperlink{class_auteurs_af5d1963f90a390287ae3de182dd7adba}{ajouter\+Auteur} (\$valeurs)
+\item 
+static \hyperlink{class_auteurs_a5f90bcbe10e2c15932d5f04e9a44e83f}{modifier\+Auteur} (\$auteur)
+\item 
+static \hyperlink{class_auteurs_abdb96363f4fa17b65d7fc97e18993579}{supprimer\+Auteur} (\$id)
+\item 
+static \hyperlink{class_auteurs_a3180877cbada17e6cd00e5e043e2b189}{charger\+Auteur\+Par\+Id} (\$id)
+\item 
+static \hyperlink{class_auteurs_a55283b4d022eca02905196418e4a8535}{nb\+Ouvrages\+Par\+Auteurs} (\$id)
+\item 
+static \hyperlink{class_auteurs_acaeff693a5c5d72b45bdce511687fc97}{liste\+Auteur\+Ex} (\$tab\+Exception)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 33 of file Auteurs.\+class.\+php.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_auteurs_af5d1963f90a390287ae3de182dd7adba}\label{class_auteurs_af5d1963f90a390287ae3de182dd7adba}} 
+\index{Auteurs@{Auteurs}!ajouter\+Auteur@{ajouter\+Auteur}}
+\index{ajouter\+Auteur@{ajouter\+Auteur}!Auteurs@{Auteurs}}
+\subsubsection{\texorpdfstring{ajouter\+Auteur()}{ajouterAuteur()}}
+{\footnotesize\ttfamily static ajouter\+Auteur (\begin{DoxyParamCaption}\item[{}]{\$valeurs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line 81 of file Auteurs.\+class.\+php.
+
+\mbox{\Hypertarget{class_auteurs_ab06d5f0fe343a9d54632aab5086bc67d}\label{class_auteurs_ab06d5f0fe343a9d54632aab5086bc67d}} 
+\index{Auteurs@{Auteurs}!Auteur\+Existe@{Auteur\+Existe}}
+\index{Auteur\+Existe@{Auteur\+Existe}!Auteurs@{Auteurs}}
+\subsubsection{\texorpdfstring{Auteur\+Existe()}{AuteurExiste()}}
+{\footnotesize\ttfamily static Auteur\+Existe (\begin{DoxyParamCaption}\item[{}]{\$id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+vérifie si un auteur existe 
+\begin{DoxyParams}{Parameters}
+{\em \$id} & \+: l\textquotesingle{}id de l\textquotesingle{}auteur à contrôler \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+un booléen 
+\end{DoxyReturn}
+
+
+Definition at line 73 of file Auteurs.\+class.\+php.
+
+\mbox{\Hypertarget{class_auteurs_a3180877cbada17e6cd00e5e043e2b189}\label{class_auteurs_a3180877cbada17e6cd00e5e043e2b189}} 
+\index{Auteurs@{Auteurs}!charger\+Auteur\+Par\+Id@{charger\+Auteur\+Par\+Id}}
+\index{charger\+Auteur\+Par\+Id@{charger\+Auteur\+Par\+Id}!Auteurs@{Auteurs}}
+\subsubsection{\texorpdfstring{charger\+Auteur\+Par\+Id()}{chargerAuteurParId()}}
+{\footnotesize\ttfamily static charger\+Auteur\+Par\+Id (\begin{DoxyParamCaption}\item[{}]{\$id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+récupère les caractéristiques d\textquotesingle{}un auteur 
+\begin{DoxyParams}{Parameters}
+{\em \$id} & \+: l\textquotesingle{}id de l\textquotesingle{}auteur \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+un objet de la classe \hyperlink{class_auteur}{Auteur} 
+\end{DoxyReturn}
+
+
+Definition at line 110 of file Auteurs.\+class.\+php.
+
+\mbox{\Hypertarget{class_auteurs_ab4cdf0e170009a70a0b8c17b03a76ee9}\label{class_auteurs_ab4cdf0e170009a70a0b8c17b03a76ee9}} 
+\index{Auteurs@{Auteurs}!charger\+Les\+Auteurs@{charger\+Les\+Auteurs}}
+\index{charger\+Les\+Auteurs@{charger\+Les\+Auteurs}!Auteurs@{Auteurs}}
+\subsubsection{\texorpdfstring{charger\+Les\+Auteurs()}{chargerLesAuteurs()}}
+{\footnotesize\ttfamily static charger\+Les\+Auteurs (\begin{DoxyParamCaption}\item[{}]{\$mode }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Méthodes publiques récupère les auteurs pour les ouvrages 
+\begin{DoxyParams}{Parameters}
+{\em \$mode} & \+: 0 == tableau assoc, 1 == tableau d\textquotesingle{}objets \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+un tableau de type \$mode 
+\end{DoxyReturn}
+
+
+Definition at line 44 of file Auteurs.\+class.\+php.
+
+\mbox{\Hypertarget{class_auteurs_acaeff693a5c5d72b45bdce511687fc97}\label{class_auteurs_acaeff693a5c5d72b45bdce511687fc97}} 
+\index{Auteurs@{Auteurs}!liste\+Auteur\+Ex@{liste\+Auteur\+Ex}}
+\index{liste\+Auteur\+Ex@{liste\+Auteur\+Ex}!Auteurs@{Auteurs}}
+\subsubsection{\texorpdfstring{liste\+Auteur\+Ex()}{listeAuteurEx()}}
+{\footnotesize\ttfamily static liste\+Auteur\+Ex (\begin{DoxyParamCaption}\item[{}]{\$tab\+Exception }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line 132 of file Auteurs.\+class.\+php.
+
+\mbox{\Hypertarget{class_auteurs_a5f90bcbe10e2c15932d5f04e9a44e83f}\label{class_auteurs_a5f90bcbe10e2c15932d5f04e9a44e83f}} 
+\index{Auteurs@{Auteurs}!modifier\+Auteur@{modifier\+Auteur}}
+\index{modifier\+Auteur@{modifier\+Auteur}!Auteurs@{Auteurs}}
+\subsubsection{\texorpdfstring{modifier\+Auteur()}{modifierAuteur()}}
+{\footnotesize\ttfamily static modifier\+Auteur (\begin{DoxyParamCaption}\item[{}]{\$auteur }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line 91 of file Auteurs.\+class.\+php.
+
+\mbox{\Hypertarget{class_auteurs_a55283b4d022eca02905196418e4a8535}\label{class_auteurs_a55283b4d022eca02905196418e4a8535}} 
+\index{Auteurs@{Auteurs}!nb\+Ouvrages\+Par\+Auteurs@{nb\+Ouvrages\+Par\+Auteurs}}
+\index{nb\+Ouvrages\+Par\+Auteurs@{nb\+Ouvrages\+Par\+Auteurs}!Auteurs@{Auteurs}}
+\subsubsection{\texorpdfstring{nb\+Ouvrages\+Par\+Auteurs()}{nbOuvragesParAuteurs()}}
+{\footnotesize\ttfamily static nb\+Ouvrages\+Par\+Auteurs (\begin{DoxyParamCaption}\item[{}]{\$id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+récupère le nombre d\textquotesingle{}ouvrages pour un auteur 
+\begin{DoxyParams}{Parameters}
+{\em \$id} & \+: l\textquotesingle{}id de l\textquotesingle{}auteur \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+un entier 
+\end{DoxyReturn}
+
+
+Definition at line 127 of file Auteurs.\+class.\+php.
+
+\mbox{\Hypertarget{class_auteurs_abdb96363f4fa17b65d7fc97e18993579}\label{class_auteurs_abdb96363f4fa17b65d7fc97e18993579}} 
+\index{Auteurs@{Auteurs}!supprimer\+Auteur@{supprimer\+Auteur}}
+\index{supprimer\+Auteur@{supprimer\+Auteur}!Auteurs@{Auteurs}}
+\subsubsection{\texorpdfstring{supprimer\+Auteur()}{supprimerAuteur()}}
+{\footnotesize\ttfamily static supprimer\+Auteur (\begin{DoxyParamCaption}\item[{}]{\$id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line 101 of file Auteurs.\+class.\+php.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+modele/\+Bll/\hyperlink{_auteurs_8class_8php}{Auteurs.\+class.\+php}\end{DoxyCompactItemize}

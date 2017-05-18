@@ -1,0 +1,78 @@
+\hypertarget{c__gerer_auteurs_8php}{}\section{controleurs/c\+\_\+gerer\+Auteurs.php File Reference}
+\label{c__gerer_auteurs_8php}\index{controleurs/c\+\_\+gerer\+Auteurs.\+php@{controleurs/c\+\_\+gerer\+Auteurs.\+php}}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespacedefault}{default}
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+if(isset(\$\+\_\+\+G\+ET\mbox{[}\char`\"{}action\char`\"{}\mbox{]})) \hyperlink{c__gerer_auteurs_8php_aa4db7f7a27517cf5cd3ff1f2577caa64}{else}
+\item 
+if(isset(\$\+\_\+\+R\+E\+Q\+U\+E\+ST\mbox{[}\char`\"{}id\char`\"{}\mbox{]})) \hyperlink{c__gerer_auteurs_8php_a9c2ce5d31a149b2ea7e5ed02e909eb9d}{\$titre\+Page} = \textquotesingle{}Gestion des auteurs\textquotesingle{}
+\item 
+\hyperlink{c__gerer_auteurs_8php_aaab0cf947dbef94de72bc55c49555684}{\$tab\+Erreurs} = array()
+\item 
+\hyperlink{c__gerer_auteurs_8php_a81a09ee6e45696499031397e176df7ca}{\$has\+Errors} = false
+\item 
+\hyperlink{c__gerer_auteurs_8php_a1cab333b177ae7c120b4c2674b30ce86}{\$cnx} = new \hyperlink{class_pdo_dao}{Pdo\+Dao}()
+\end{DoxyCompactItemize}
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{c__gerer_auteurs_8php_a1cab333b177ae7c120b4c2674b30ce86}\label{c__gerer_auteurs_8php_a1cab333b177ae7c120b4c2674b30ce86}} 
+\index{c\+\_\+gerer\+Auteurs.\+php@{c\+\_\+gerer\+Auteurs.\+php}!\$cnx@{\$cnx}}
+\index{\$cnx@{\$cnx}!c\+\_\+gerer\+Auteurs.\+php@{c\+\_\+gerer\+Auteurs.\+php}}
+\subsubsection{\texorpdfstring{\$cnx}{$cnx}}
+{\footnotesize\ttfamily \$cnx = new \hyperlink{class_pdo_dao}{Pdo\+Dao}()}
+
+
+
+Definition at line 37 of file c\+\_\+gerer\+Auteurs.\+php.
+
+\mbox{\Hypertarget{c__gerer_auteurs_8php_a81a09ee6e45696499031397e176df7ca}\label{c__gerer_auteurs_8php_a81a09ee6e45696499031397e176df7ca}} 
+\index{c\+\_\+gerer\+Auteurs.\+php@{c\+\_\+gerer\+Auteurs.\+php}!\$has\+Errors@{\$has\+Errors}}
+\index{\$has\+Errors@{\$has\+Errors}!c\+\_\+gerer\+Auteurs.\+php@{c\+\_\+gerer\+Auteurs.\+php}}
+\subsubsection{\texorpdfstring{\$has\+Errors}{$hasErrors}}
+{\footnotesize\ttfamily \$has\+Errors = false}
+
+
+
+Definition at line 34 of file c\+\_\+gerer\+Auteurs.\+php.
+
+\mbox{\Hypertarget{c__gerer_auteurs_8php_aaab0cf947dbef94de72bc55c49555684}\label{c__gerer_auteurs_8php_aaab0cf947dbef94de72bc55c49555684}} 
+\index{c\+\_\+gerer\+Auteurs.\+php@{c\+\_\+gerer\+Auteurs.\+php}!\$tab\+Erreurs@{\$tab\+Erreurs}}
+\index{\$tab\+Erreurs@{\$tab\+Erreurs}!c\+\_\+gerer\+Auteurs.\+php@{c\+\_\+gerer\+Auteurs.\+php}}
+\subsubsection{\texorpdfstring{\$tab\+Erreurs}{$tabErreurs}}
+{\footnotesize\ttfamily \$tab\+Erreurs = array()}
+
+
+
+Definition at line 33 of file c\+\_\+gerer\+Auteurs.\+php.
+
+\mbox{\Hypertarget{c__gerer_auteurs_8php_a9c2ce5d31a149b2ea7e5ed02e909eb9d}\label{c__gerer_auteurs_8php_a9c2ce5d31a149b2ea7e5ed02e909eb9d}} 
+\index{c\+\_\+gerer\+Auteurs.\+php@{c\+\_\+gerer\+Auteurs.\+php}!\$titre\+Page@{\$titre\+Page}}
+\index{\$titre\+Page@{\$titre\+Page}!c\+\_\+gerer\+Auteurs.\+php@{c\+\_\+gerer\+Auteurs.\+php}}
+\subsubsection{\texorpdfstring{\$titre\+Page}{$titrePage}}
+{\footnotesize\ttfamily if (isset( \$\+\_\+\+R\+E\+Q\+U\+E\+ST\mbox{[}\char`\"{}id\char`\"{}\mbox{]})) \$titre\+Page = \textquotesingle{}Gestion des auteurs\textquotesingle{}}
+
+
+
+Definition at line 30 of file c\+\_\+gerer\+Auteurs.\+php.
+
+\mbox{\Hypertarget{c__gerer_auteurs_8php_aa4db7f7a27517cf5cd3ff1f2577caa64}\label{c__gerer_auteurs_8php_aa4db7f7a27517cf5cd3ff1f2577caa64}} 
+\index{c\+\_\+gerer\+Auteurs.\+php@{c\+\_\+gerer\+Auteurs.\+php}!else@{else}}
+\index{else@{else}!c\+\_\+gerer\+Auteurs.\+php@{c\+\_\+gerer\+Auteurs.\+php}}
+\subsubsection{\texorpdfstring{else}{else}}
+{\footnotesize\ttfamily if (isset( \$\+\_\+\+G\+ET\mbox{[}\char`\"{}action\char`\"{}\mbox{]})) else}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+\{
+    $action = \textcolor{stringliteral}{'listerAuteurs'}
+\end{DoxyCode}
+
+
+Definition at line 18 of file c\+\_\+gerer\+Auteurs.\+php.
+
