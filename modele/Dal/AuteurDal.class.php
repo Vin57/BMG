@@ -154,7 +154,7 @@ class AuteurDal {
     public static function loadAuteursNotInOuvrage($style, $tabException) {
         $cnx = new PdoDao();
         if (empty($tabException)) {
-            $qry = 'SELECT id_auteur, nom_auteur AS nom ,prenom_auteur, alias AS prenom FROM auteur';
+            $qry = 'SELECT id_auteur, nom_auteur AS nom ,prenom_auteur AS prenom, alias FROM auteur ORDER BY nom_auteur';
         } else {
             $qry = 'SELECT id_auteur, nom_auteur AS nom, prenom_auteur AS prenom, alias FROM auteur WHERE id_auteur
             NOT IN (
